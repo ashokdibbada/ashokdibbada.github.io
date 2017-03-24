@@ -1,0 +1,365 @@
+body{
+	min-width:1024px;
+	min-height:868px;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+/*    font-family: Georgia, serif;*/
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+	left: -30px;
+	top: 0px;
+    content: "\201C";
+}
+blockquote:after {
+/*    font-family: Georgia, serif;*/
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+}
+
+.profile_div{
+/*	display:block !important; */
+	min-height:728px;
+/*	background-color:#121111;*/
+	padding: 0px !important;
+}
+
+.profile_info_div{
+	margin-left:2%;
+	padding:5%;
+	height:728px; /* 350*/
+/*	background-color:#121111;
+	background-image: url(ground.jpg);
+	 background-size: cover;*/
+}
+.profile_image_div{
+	height:211px; /* 250 */
+}
+.profile_image_div img{
+	border-radius:25px 25px 0px 0px;
+	height:100%;
+	width:100%;
+}
+
+.profile_name_div{
+	border-radius:0px 0px 0px 0px;
+/*	height:74px; /* 90 */
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom: 2%;
+	padding-top:2%;
+	background-color:#ffffff;
+}
+/*.profile_attr_div{
+	margin-left:2%;
+	padding-top:2%;
+	padding-right:5%;
+	padding-left:5%;
+	height:383px;  
+	background-color:#E5E5E2;
+}*/
+
+.profile_list_div{
+	border-radius:0px 0px 25px 25px;
+	padding:10px;
+	background-color:#D3D3D3;
+
+}
+.profile_list_div li {
+  list-style-type: none;
+}
+.current {
+/*	background-color: #f96302; */ /* Orange*/
+	background-color:#44403E;
+	border-radius:0px;
+	color:white !important;
+	font-weight: bold; 
+}
+
+.rest{
+	background-color:#f2f2f2;
+		border-radius:10px;
+}
+
+ .add_bar a:hover{
+    text-decoration: none;
+   	color:white; 
+    font-weight:bold;
+}
+
+
+/* Inner Pages CSS Styles */
+
+.inner_page_first_div{
+	/* margin:2%; */
+	min-height:728px;
+	padding:0.5%;
+	height:100%;
+/*	background-color:#121111;
+*/   	overflow: auto; 
+/*   	background-image: url(ground.jpg);
+   	 background-size: cover;*/
+}
+
+/* Company Page */
+
+.company_div{
+	background-color:white !important;  
+	margin:1%;
+	padding-top: 0.5%;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-bottom:1%; 
+/*	border-radius:25px;*/
+}
+
+.company_header_div{
+	margin-top:0.3%;
+	margin-left:0%;
+	margin-right:0%;
+	margin-bottom:0%;
+	height:5%;
+	padding-bottom:0.1%;
+	background-color: white;
+}
+
+.company_project_heading {
+/*	background-color: #f96302; */ /* Orange*/
+	background-color:#212020;
+	padding-left: 2%;
+/*	border-radius:15px 15px 0px 0px;*/
+	color:white !important;
+	font-size: 120%;
+}
+
+.work{
+	font-size:200%;
+	color:#7B241C;
+}
+.work_current{
+	font-size:200%;
+	color: #196F3D;
+}
+.spot {
+	font-size:180%;
+	color:#9B9A99;
+}
+
+.impact {
+	font-size:180%;
+	color:#FFD700;
+}
+
+.fa-code{
+	font-size:180%;	
+	color:black;
+}
+
+.company_div ul {
+	margin-left:2%;
+	padding:0%;	
+}
+.company_div li{
+	font-size:90%;
+	margin:0%;
+	padding:0%;
+}
+
+.skill_tag{
+	padding-right:3%;
+}
+
+.project_skill{
+	font-size:80%;
+	margin:0.4%;
+	background-color: #3F3E3D;
+	color:white;
+	text-decoration: none;
+/*	font-weight:bold; */
+	padding:0.4%;
+	border-radius:14px;
+	cursor: pointer;
+}
+
+.company_div a:hover{
+    text-decoration: none;
+/*    color:white; */
+    /*font-weight:bold;*/
+  /*  background-color: #D66A05;*/
+}
+
+.skills_div a:hover{
+	background-color: #F15608;
+    text-decoration: none;
+   	color:white; 
+  /*  font-weight:bold;*/
+}
+
+/* Overview - Skills Page CSS */
+.skill_test_div{
+	background-color:white !important; 
+	height:100%; 
+	margin:1%;
+	padding-top: 0.5%;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-bottom:1%; 
+	border-radius:25px;
+}
+
+/* Education page CSS */
+.education_details_div{
+	margin-top:0%;
+	margin-left:0%;
+	margin-right:0%;
+	margin-bottom:0%;
+	height:25%;
+	padding-top:1%;
+	padding-bottom:0.1%;
+	background-color: #F1F1E6;
+	border-radius:15px;
+}
+
+.education_details_div ul {
+	margin-left:1%;
+	padding:0%;	
+}
+
+.grad_cap{
+	font-size:200%;
+	color:#7B241C;
+}
+
+.education_details_div a:hover{
+    text-decoration: none;
+   	color:white; 
+    font-weight:bold;
+}
+
+.school_table{
+	width:100%;
+/*	border-radius:15px 15px 0px 0px; */
+}
+
+.school_table table, th, td {
+/*    border: 1px solid black; 
+    border-collapse: collapse;  */
+}
+
+.school_table td{
+background: #D4E6F1;
+text-align:center;
+font-size:80%;
+padding:0.5%;
+}
+
+.school_table th{
+/* color: #FFFFFF; */
+color:#1D4F7B;
+background:#E9F1FA;
+/* background:#5A9BD3; */
+font-size:100%;
+text-align:center;
+}
+
+/* .school_table tr:nth-child(even) {background: #FFF}
+.school_table tr:nth-child(odd) {background: #FFF} */
+.school_table tr:nth-child(2) td:first-child{
+	border-radius: 0px 0px 0px 15px;
+/*	border-bottom-left-radius: 10px */
+     }
+.school_table tr:nth-child(2) td:last-child{
+	border-radius: 0px 0px 15px 0px;
+     }
+
+.ac_details_div{
+	margin-top:0%;
+	margin-left:0%;
+	margin-right:0%;
+	margin-bottom:0%;
+	height:25%;
+	padding-top:0.5%;
+	padding-bottom:0.1%;
+	background-color: #F1F1E6;
+	border-radius:15px;
+}
+
+.company_ac_div{
+	background-color:white !important;  
+	margin:1%;
+	padding-top: 0.5%;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-bottom:0.5%; 
+	border-radius:25px;
+}
+
+/* Skill Set Page*/
+
+.skill_company_div{
+	background-color:white !important;  
+	margin:1%;
+	padding-top: 0.2%;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-bottom:0.5%; 
+/*	border-radius:25px;*/
+}
+
+.code_details_div{
+	margin-top:0%;
+	margin-left:0%;
+	margin-right:0%;
+	margin-bottom:0%;
+	height:25%;
+	padding-top:0.5%;
+	padding-bottom:0.1%;
+	background-color: #ffffff;
+	border-radius: 25px;
+}
+
+.code_details_div ul{
+	margin-left:1%;
+	padding:0%;
+}
+
+/* Know more Page*/
+.know_company_div{
+	background-color:white !important;  
+	margin:1%;
+	padding-top: 0.2%;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-bottom:0.5%; 
+	border-radius:25px;
+}
+
+.know_user_details_div{
+	margin-top:0%;
+	margin-left:0%;
+	margin-right:0%;
+	margin-bottom:0%;
+	height:25%;
+	padding-top:0.5%;
+	padding-bottom:0.1%;
+	background-color: #ffffff;
+	border-radius: 25px;
+}

@@ -1,0 +1,57 @@
+<div class="inner_page_first_div">
+	<div class = "company_div" ng-repeat="company in eduElements">
+	<div class="row company_header_div">
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="height:100%;width:5%;background-color:white;padding:0px !important;">
+	<div style="height:100%;width:100%;background-color: white;	border-radius:25px 25px 0px 0px;">
+	<img style="height:100%;width:100%;" src="iitg.png" onclick="https://www.iitg.ac.in/"></div>
+	</div>
+		<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7" style="height:100%;width:35%;background-color:white;padding:0px !important;">
+			<div style="margin-top:2%;margin-left:0.5%;color:#F64F19;font-weight:bold;">{{company.id}}</div>
+						<div style="color:#cccccc;">{{company.cdesc}}</div>
+		</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="height:100%;width:20%;margin-top:1%;float:right;color:#F96804;text-align:right;">
+					<span class="fa fa-calendar" style="padding-right:1%;"></span>
+					<span style="font-size:80%;font-weight:bold;">{{company.tenure}}</span>
+				</div>
+		</div>
+		<div class="row education_details_div">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+			<span class="grad_cap fa fa-graduation-cap"></span></div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:95%;text-align:left;">
+			<div compile-html="company.desc"></div>
+			<div compile-html="company.courses" style="padding-bottom:0.7%;"></div>
+		</div>
+		</div>
+		</div>
+		<div class = "company_div">
+		<div class="row education_details_div" style="height:25%;background-color:white;">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="height:100%;width:10%;background-color:white;padding:0px !important;">
+		<div style="height:100%;width:100%;background-color: white;	border-radius:25px 25px 0px 0px;">
+		<img style="height:100%;width:100%;" src="bhashyam.png" onclick="https://www.bhashyamschools.com//"></div>
+		</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="height:100%;width:88%;background-color:white;padding-top:1%;">
+		<table class="school_table">
+	<thead><tr>
+	<th style="border-radius: 15px 0px 0px 0px;">Instituion</th>
+	<th>Degree</th><th>Percentage</th>
+	<th style="border-radius: 0px 15px 0px 0px;">Years</th></tr></thead>
+	<tbody>
+	<tr ng-repeat="record in sklElements">
+	<td>{{record.skl}}</td>
+	<td>{{record.deg}}</td>
+	<td>{{record.pnct}}</td>
+	<td>{{record.years}}</td>
+</tr>
+</tbody>
+</table>
+		</div>
+		</div>
+		</div>
+<div class="company_ac_div">
+<div style="padding-left:2%;font-weight:bold;">Accomplishments</div>
+<div class="ac_details_div">
+<div compile-html="acmnts"></div>
+</div>
+</div>
+
+		</div>

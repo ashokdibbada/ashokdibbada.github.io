@@ -1,0 +1,80 @@
+<div class="inner_page_first_div">
+	<div class = "company_div" ng-repeat="company in clgElements">
+	<div class="row company_header_div">
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="height:100%;width:5%;background-color:white;padding:0px !important;">
+	<div style="height:100%;width:100%;background-color: white;	border-radius:25px 25px 0px 0px;">
+	<img style="height:100%;width:100%;" src="iitg.png" onclick="https://www.iitg.ac.in/"></div>
+	</div>
+		<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7" style="height:100%;width:35%;background-color:white;padding:0px !important;">
+			<div style="margin-top:2%;margin-left:0.5%;color:#F64F19;font-weight:bold;">{{company.id}}</div>
+			<div style="color:#cccccc;">{{company.cdesc}}</div>
+		</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="height:100%;width:20%;margin-top:1%;float:right;color:#F96804;text-align:right;">
+					<span class="fa fa-calendar" style="padding-right:1%;"></span>
+					<span style="font-size:80%;font-weight:bold;">{{company.tenure}}</span>
+				</div>
+	</div>
+		<div style="height:50%;background-color:white;">
+			<div compile-html="company.first_project_header" ></div>
+				<div class="row">
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+						<span class="work glyphicon glyphicon-briefcase"></span></div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:95%;text-align:left;">
+									<div compile-html="company.first_project_desc"></div>
+								</div>
+				</div>
+				<div class=" skills_div row"> 
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+						<span class="fa fa-code"></span></div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:80%;margin-top:0.6%;font-size:90%;"compile-html="company.first_project_skills"></div>
+					</div>
+				<div class="row"> 
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+						<span class='spot glyphicon glyphicon-certificate'></span></div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:80%;margin-top:0.6%;font-size:90%;"compile-html="company.first_project_awards">
+						</div>
+					</div>
+	<!-- Second Project DIV-->
+			<div compile-html="company.second_project_header" ></div>
+				<div class="row">
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+						<span class="work glyphicon glyphicon-briefcase"></span></div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:95%;text-align:left;">
+									<div compile-html="company.second_project_desc"></div>
+								</div>
+				</div>
+				<div class=" skills_div row"> 
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+						<span class="fa fa-code"></span></div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:80%;margin-top:0.6%;font-size:90%;"compile-html="company.second_project_skills"></div>
+					</div>
+				<div class="row"> 
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+						<span class='impact glyphicon glyphicon-certificate'></span></div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:80%;margin-top:0.6%;font-size:90%;"compile-html="company.second_project_awards">
+						</div>
+					</div>
+		<!-- Third Project DIV -->
+		<div compile-html="company.third_project_header" ></div>
+				<div class="row">
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+						<span class="work_current glyphicon glyphicon-briefcase"></span></div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:95%;text-align:left;">
+									<div compile-html="company.third_project_desc"></div>
+								</div>
+				</div>
+				<div class=" skills_div row"> 
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+						<span class="fa fa-code"></span></div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:80%;margin-top:0.6%;font-size:90%;"compile-html="company.third_project_skills"></div>
+					</div>
+	<!--			<div class="row"> 
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="width:5%;">
+						<span class='spot glyphicon glyphicon-certificate'></span></div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="width:80%;margin-top:0.6%;font-size:90%;"compile-html="company.third_project_awards">
+						</div>
+					</div>
+				-->
+
+	</div>
+</div>

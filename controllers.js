@@ -1,5 +1,5 @@
 app.controller('MainCtrl',function($scope,$state,$rootScope,localStorageService){
-		$rootScope.$state = $state;
+	$rootScope.$state = $state;
 		$scope.pageElements = [
 		{name:"Overview",selected:false,link:'over_view'},
 		{name:"Industry Experience",selected:false,link:'firm_exp'},

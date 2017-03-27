@@ -168,6 +168,14 @@ blockquote footer {
 	color:#FFD700;
 }
 
+.time{
+	color:white;
+	float:right;
+	font-size:80%;
+	padding-top:0.2%;
+	padding-right:1%;
+}
+
 .fa-code{
 	font-size:180%;	
 	color:black;
@@ -299,7 +307,7 @@ text-align:center;
 	padding-top:0.5%;
 	padding-bottom:0.1%;
 	background-color: #F1F1E6;
-	border-radius:15px;
+	border-radius:0px;
 }
 
 .company_ac_div{
@@ -309,7 +317,7 @@ text-align:center;
 	padding-left: 0.5%;
 	padding-right: 0.5%;
 	padding-bottom:0.5%; 
-	border-radius:25px;
+	border-radius:0px;
 }
 
 /* Skill Set Page*/
@@ -362,4 +370,20 @@ text-align:center;
 	padding-bottom:0.1%;
 	background-color: #ffffff;
 	border-radius: 25px;
+}
+
+/*College */
+.pdf_file{
+	text-decoration: none;
+	font-size:150%;
+	color:red;
+	padding-left:1%;
+	cursor:pointer;
+}
+
+.pdf_file a:hover{
+    text-decoration: none;
+    color:red;
+    font-size:200%;
+    font-weight:bold;
 }

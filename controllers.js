@@ -1,5 +1,5 @@
 app.controller('MainCtrl',function($scope,$state,$rootScope,localStorageService){
-	$rootScope.$state = $state;
+		$rootScope.$state = $state;
 		$scope.pageElements = [
 		{name:"Overview",selected:false,link:'over_view'},
 		{name:"Industry Experience",selected:false,link:'firm_exp'},
@@ -23,7 +23,10 @@ app.controller('MainCtrl',function($scope,$state,$rootScope,localStorageService)
 		{name:"Spring MVC",selected:false,link:'skill_set'}, //12
 		{name:"Server Administration",selected:false,link:'skill_set'}, //13
 		{name:"NVIDIA CUDA",selected:false,link:'skill_set'}, //14
-		{name:"Text Analytics",selected:false,link:'skill_set'} //15
+		{name:"Text Analytics",selected:false,link:'skill_set'}, //15
+		{name:"MATLAB",selected:false,link:'skill_set'}, //16
+		{name:"Arduino Programming",selected:false,link:'skill_set'}, //17
+		{name:"Communication and Networks",selected:false,link:'skill_set'} //18
 		];
 
 		$scope.msg = "Parent"
@@ -67,15 +70,15 @@ app.controller('C1Ctrl',function($scope,$state,$rootScope,localStorageService,$s
 	 image:'musigma.jpg' ,
 	 tenure:"Sept 2015 - Present", 
 	 // Project Headings
-	 first_project_header:"<p class='company_project_heading';>Parts Harmonization</p>",
-	 second_project_header:"<p class='company_project_heading';>Video Analytics</p>",
-	 third_project_header:"<p class='company_project_heading';>Visualization Portal</p>",
+	 first_project_header:"<p class='company_project_heading';>Parts Harmonization<span class='time'>March '16 - May '16</span></p>",
+	 second_project_header:"<p class='company_project_heading';>Video Analytics<span class='time'>June '16 - Sept '16</span></p>",
+	 third_project_header:"<p class='company_project_heading';>Visualization Portal<span class='time'>Nov '16 - Mar '17</span></p>",
 	 // Project Description
-	 first_project_desc:"<ul><li>Worked with client</li><li>Wrote code</li><li>Took ownership</li><li>Made Tutorials</li><li>Danced</li></ul>",
- 	second_project_desc:"<ul><li>Worked with client</li><li>Wrote code</li><li>Took ownership</li><li>Made Tutorials</li><li>Danced</li></ul>",
-  	third_project_desc:"<ul><li>Worked with client</li><li>Wrote code</li><li>Took ownership</li><li>Made Tutorials</li><li>Danced</li></ul>",
+	first_project_desc:"<ul><li>Worked directly with US based multinational conglomerate client in identifying duplicates at part level by identifying key part characteristics and descriptions for various part ID's in the given part</li><li>Developed a desktop tool in python i.e. <a ng-click='stateGo(skillElements[0])'>Parts spec Extractor</a> to extract the important part characteristics for the part IDs present in the spec table drawings</li><li>Performed linear regression between P.O. Cost and part characteristics to identify better procurement options at the part level</li><li>Created an excel dashboard indicating the better procurement options for specified part characteristics at part level</li><li>Learned writing pythonic code and was awarded spot award on successful completion of project</li></ul>",
+ 	second_project_desc:"<ul><li> was part of four membered team and wrked with major US based retail client </li><li>Developed a desktop tool in python i.e. <a ng-click='stateGo(skillElements[0])'>Wait time tagger</a> to tag wait times of customers from video feed</li><li></li><li>Made Tutorials</li><li>Danced</li></ul>",
+  	third_project_desc:"<ul><li>was part of three membered team and worked with major US based retail client to built a web application for visualizing the price sensitivity model results and simulate price sensitivity calculation  at customer level</li><li>directly responsible for developing middle layer architecture using Java Springs and front end connectivity using angular.js</li><li>Developed graphical components like stack bar chart, heat map, donut chart in d3.js for visualization purposes</li><li>Successfully completed pilot phase and currently working on business proposal of future projects</li></ul>",
   	// Project Awards
-	 first_project_awards:"<a href='profile.jpg'>Spot award </a>,<a href='https://www.mu-sigma.com/'>involved in development of computer vision course at org level</a>", 
+	 first_project_awards:"<a href='profile.jpg'>Spot award,</a><a href='https://www.mu-sigma.com/'> involved in development of computer vision course at org level</a>", 
 	 second_project_awards:"<a href='profile.jpg'>Impact award</a>,<a href='https://www.mu-sigma.com/'> presented alogirthm results video demo to CEO & leadership team</a>,<a href='https://www.mu-sigma.com/'> featured in Mu-Sigma Times article</a>", 
 	 // Project Skills
 	 first_project_skills:"<a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[1].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[2].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[7].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[6].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[15].name}}</a>",
@@ -125,18 +128,18 @@ app.controller('C2Ctrl',function($scope,$state,$rootScope,localStorageService){
 	 image:'iitg.png' ,
 	 tenure:"July 2011 - June 2015", 
 	 // Project Headings
-	 first_project_header:"<p class='company_project_heading';>Parts Harmonization</p>",
-	 second_project_header:"<p class='company_project_heading';>Video Analytics</p>",
-	 third_project_header:"<p class='company_project_heading';>Visualization Portal</p>",
+	 first_project_header:"<p class='company_project_heading';>Software and Hardware implementation of Power Line Communication <span class='time'>July '14- April '15</span></p>",
+	 second_project_header:"<p class='company_project_heading';>Implementation of Re-configurable printed antenna <span class='time'>Jan '14- April '14</span></p>",
+	 third_project_header:"<p class='company_project_heading';>Identification of Medicinal Leaves<span class='time'>May '14- July '14</span></p>",
 	 // Project Description
-	 first_project_desc:"<ul><li>Worked with client</li><li>Wrote code</li><li>Took ownership</li><li>Made Tutorials</li><li>Danced</li></ul>",
+	 first_project_desc:"<ul><li>This was my <b><i>Bachelor Thesis Project</i></b> and it aims at implementing power line communication as an effective tool box for communication purposes</li><li>For software interface, the idea is to establish a power line channel scenario and transmit the data bytes through OFDM transmission model.The software implementation has been done in MATLAB</li><li>Implemented the hardware interface by establishing communication between two computers connected with arduino micro controllers (<i>transmitter</i> and <i>receiver</i>) through power line channel using PLC modems</li><li>Data transmission is achieved by transmitting the serial data using arduino micro controller to the PLC modem at the trasnmitter end  which transmits the data into power line channel and receiving the data by PLC modem at trasnmitter end</li></ul>",
  	second_project_desc:"<ul><li>Worked with client</li><li>Wrote code</li><li>Took ownership</li><li>Made Tutorials</li><li>Danced</li></ul>",
   	third_project_desc:"<ul><li>Worked with client</li><li>Wrote code</li><li>Took ownership</li><li>Made Tutorials</li><li>Danced</li></ul>",
   	// Project Awards
-	 first_project_awards:"<a href='profile.jpg'>Spot award </a>,<a href='https://www.mu-sigma.com/'>involved in development of computer vision course at org level</a>", 
+	 first_project_awards:"<a>Poster presentation,</a><a> submitted report paper,</a><a href='Final_Report.pdf' target='_blank'> Detailed documentation here:</a><a class='fa fa-file-pdf-o pdf_file' href='Final_Report.pdf' target='_blank'></a>", 
 	 second_project_awards:"<a href='profile.jpg'>Impact award</a>,<a href='https://www.mu-sigma.com/'>presented alogirthm results video demo to CEO & leadership team</a>", 
 	 // Project Skills
-	 first_project_skills:"<a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[1].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[2].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[7].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[6].name}}</a>",
+	 first_project_skills:"<a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[16].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[17].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[18].name}}</a>",
 	 second_project_skills:"<a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[1].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[7].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[9].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[10].name}}</a> <a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[11].name}}</a> <a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[14].name}}</a>",
 	 third_project_skills:"<a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[0].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[12].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[13].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[3].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[4].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[5].name}}</a>"}];		
 });

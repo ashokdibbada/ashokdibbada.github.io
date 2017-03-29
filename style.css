@@ -1,6 +1,6 @@
 body{
 	min-width:1024px;
-	min-height:868px;
+	min-height:768px;
 }
 
 blockquote {
@@ -37,7 +37,7 @@ blockquote footer {
 
 .profile_div{
 /*	display:block !important; */
-	min-height:728px;
+	min-height:628px;
 /*	background-color:#121111;*/
 	padding: 0px !important;
 }
@@ -45,7 +45,7 @@ blockquote footer {
 .profile_info_div{
 	margin-left:2%;
 	padding:5%;
-	height:728px; /* 350*/
+	height:628px; /* 350*/
 /*	background-color:#121111;
 	background-image: url(ground.jpg);
 	 background-size: cover;*/
@@ -110,7 +110,7 @@ blockquote footer {
 
 .inner_page_first_div{
 	/* margin:2%; */
-	min-height:728px;
+	min-height:628px;
 	padding:0.5%;
 	height:100%;
 /*	background-color:#121111;
@@ -209,6 +209,7 @@ blockquote footer {
 
 .company_div a:hover{
     text-decoration: none;
+    cursor: pointer;
 /*    color:white; */
     /*font-weight:bold;*/
   /*  background-color: #D66A05;*/
@@ -386,4 +387,11 @@ text-align:center;
     color:red;
     font-size:200%;
     font-weight:bold;
+}
+
+.prj_div a:hover{
+/*    text-decoration: none;*/
+    cursor: pointer;
+    font-weight:bold;
+  /*  background-color: #D66A05;*/
 }

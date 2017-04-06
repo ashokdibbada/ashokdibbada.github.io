@@ -4,8 +4,8 @@ app.controller('MainCtrl',function($scope,$state,$rootScope,localStorageService)
 		{name:"Overview",selected:false,link:'over_view'},
 		{name:"Industry Experience",selected:false,link:'firm_exp'},
 		{name:"Academic Experience",selected:false,link:'clg_exp'},
-		{name:"SkillSet",selected:false,link:'skill_set'},
-		{name:"Education & Accomplishments",selected:false,link:'education'}
+		{name:"SkillSet",selected:false,link:'skill_set'}
+//		{name:"Education & Accomplishments",selected:false,link:'education'}
 		];
 			// skillElements 	
 	$scope.skillElements = [{name:"Java EE",selected:false,link:'skill_set'}, //0

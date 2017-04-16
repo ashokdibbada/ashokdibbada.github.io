@@ -58,6 +58,9 @@ app.controller('MainCtrl',function($scope,$state,$rootScope,localStorageService)
 		$scope.selectLink($scope.pageElements[3]);
 //		$state.go(attr.link);
 	};
+		$scope.overGo = function(attr){
+		$scope.selectLink(attr);
+		}
 		$scope.init();
 });
 
@@ -81,8 +84,8 @@ app.controller('C1Ctrl',function($scope,$state,$rootScope,localStorageService,$s
  	second_project_desc:"<ul><li>Worked with US based home improvement retailer in detecting and tracking of  customers from in-store CCTV footage</li><li>Developed an ensemble <a ng-click='stateGo(skillElements[0])'>neural network model</a> for human face detection and tracking across video frames</li><li>Developed a click tool in python i.e. <a ng-click='stateGo(skillElements[0])'>Time Tagger</a> for tagging customer wait and check out time for model validation</li></ul>",
   	third_project_desc:"<ul><li>Built a web application for US based home improvement retailer to visualize and monitor price sensitivity model results and simulating price sensitivity scores</li><li>Worked as a full stack developer and was responsible for developing middle layer as well as front end architecture</li><li>Created graphical components in d3.js for visualization purposes</li></ul>",
   	// Project Awards
-	 first_project_awards:"<a href='profile.jpg'>Spot award,</a><a href='https://www.mu-sigma.com/'> involved in development of computer vision course at org level</a>", 
-	 second_project_awards:"<a href='profile.jpg'>Impact award,</a><a href='https://www.mu-sigma.com/'> presented alogirthm results video demo to CEO & leadership team,</a><a href='https://www.mu-sigma.com/'> featured in Mu-Sigma Times article</a>", 
+	 first_project_awards:"<a>Spot award,</a><a> involved in development of computer vision course at org level</a>", 
+	 second_project_awards:"<a>Impact award,</a><a> presented alogirthm results video demo to CEO & leadership team,</a><a> featured in Mu-Sigma Times article</a>", 
 	 // Project Skills
 	 first_project_skills:"<a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[1].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[2].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[7].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[6].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[8].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[15].name}}</a>",
 	 second_project_skills:"<a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[1].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[7].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[9].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[10].name}}</a> <a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[11].name}}</a> <a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[14].name}}</a>",
@@ -96,7 +99,7 @@ app.controller('C3Ctrl',function($scope,$state,$rootScope,localStorageService){
 	$scope.spec_extr_details = "<ul><li>This application takes images with part specifications against part ID's in tabular form as input and generates excel file with part ID's and desired part specifications</li><li>The user can input the column numbers of desired attributes, application snips the selected columns from the tabular image and runs tesseract engine to extract the captured information</li><li>The extracted information will be cleaned on basis of business rules and exports results to excel file</li></ul>"
 	$scope.wait_ext_details = "<ul><li>This application takes video footage as input and generates excel file containing wait and checkout times of customers present in the CCTV footage</li><li>The user can create a collapsable UI row representing customer record and fill customer details, record wait and checkout times by clicking on respective fields</li><li>After the tagging is completed, user can export the captured information into an excel file.</li></ul>"
 	$scope.neural_ext_details = "<ul><li>For face detection, used <a href='https://github.com/Russell91/ReInspect' target='_blank'>Reinspect</a> as our base architecture and added custom inception layers to suit our usecase. Used these face detection results as an input to multiple hypothesis tracker to track the customers across video frames</li><li>We implemented preprocessing techniques like RandomCrop, boundingboxshift, color jittering, flipping and rotation of images to enhance model input and to improve the accuracy of neural network outputs</li></ul>"
-	$scope.spec_ext_details= "<ul><li>Experienced in performing data cleaning,text analytics and regression analysis in R & Python</li><li>Created excel based reporting framework highlighting the optimised procurement options</li></ul>"
+	$scope.spec_ext_details= "<ul><li>Experienced in performing Data cleaning,text analytics and regression & Cluster analysis in R & Python</li><li>Used Linear & Logistic regression, AP clustering, LSA, JW similarity,NLTK(Python) and created excel dashboards</li></ul>"
 	$scope.web_ext_details= "<ul><li>Worked as a full stack developer and developed java based web portal for visualization purposes</li><li>Experienced in using java script variants like angular.js, d3.js along with Bootstrap</li></ul>"
 });
 // Education Controller
@@ -144,7 +147,7 @@ app.controller('C2Ctrl',function($scope,$state,$rootScope,localStorageService){
   	third_project_desc:"<ul><li>As part of my <b><i>Summer Internship,</i></b> did literature review about shape descriptors and edge detection of images</li><li>Developed an application in MATLAB which enables user to manually select points on the image to form an outline using spline interpolation</li><li>Performed edge detection on leaf images using various edge detectors</li></ul>",
   	// Project Awards
 	 first_project_awards:"<a>Poster presentation,</a><a> submitted report paper,</a><a href='Final_Report.pdf' target='_blank'> Detailed documentation here:</a><a class='fa fa-file-pdf-o pdf_file' href='Final_Report.pdf' target='_blank'></a>", 
-	 second_project_awards:"<a>Poster presentation,</a><a href='Final_Report.pdf' target='_blank'> Detailed documentation here:</a><a class='fa fa-file-pdf-o pdf_file' href='Final_Report.pdf' target='_blank'></a>", 
+	 second_project_awards:"<a>Poster presentation,</a><a href='report.pdf' target='_blank'> Detailed documentation here:</a><a class='fa fa-file-pdf-o pdf_file' href='report.pdf' target='_blank'></a>", 
 	 // Project Skills
 	 first_project_skills:"<a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[16].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[17].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[18].name}}</a>",
 	 second_project_skills:"<a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[19].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[20].name}}</a><a class='project_skill' ng-click='stateGo(skillElements[0])' >{{skillElements[18].name}}</a>",
